@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 export default function Login() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -44,6 +47,8 @@ export default function Login() {
       setMessage(data.message || "Login successful");
       localStorage.setItem("user", JSON.stringify(data.user));
       console.log("Logged in user:", data.user);
+
+      navigate("/home");
     } catch (err) {
       console.error("Login request failed:", err);
       setError("Unable to connect to the server");
@@ -94,7 +99,7 @@ export default function Login() {
         {error && <p className="error-message">{error}</p>}
 
         <div className="login-footer">
-          Don’t have an account? <a href="/register">Create one</a>
+          Don’t have an account? <Link to="/register">Create one</Link>
         </div>
       </div>
     </div>
