@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import "./Home.css";
 
@@ -35,25 +35,25 @@ export default function Home() {
         </section>
 
         <section className="home-grid">
-          <div className="home-card">
+          <Link to="/browse" className="home-card">
             <h2>Browse Listings</h2>
             <p>Explore items posted by students across campus.</p>
-          </div>
+          </Link>
 
-          <div className="home-card">
+          <Link to="/my-listings" className="home-card">
             <h2>My Listings</h2>
             <p>Manage the products and items you have posted.</p>
-          </div>
+          </Link>
 
-          <div className="home-card">
+          <Link to="/messages" className="home-card">
             <h2>Messages</h2>
             <p>Stay in touch with buyers and sellers in one place.</p>
-          </div>
+          </Link>
 
-          <div className="home-card">
+          <Link to="/favorites" className="home-card">
             <h2>Favorites</h2>
             <p>Keep track of listings you want to revisit later.</p>
-          </div>
+          </Link>
         </section>
       </main>
     </div>

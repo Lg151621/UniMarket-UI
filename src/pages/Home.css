@@ -43,6 +43,9 @@
 }
 
 .home-card {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
   background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.02));
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;

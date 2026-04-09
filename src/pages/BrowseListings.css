@@ -1,0 +1,215 @@
+.page {
+  min-height: 100vh;
+  background: #000000;
+  color: #ffffff;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 48px 64px;
+}
+
+.page-hero {
+  margin-bottom: 32px;
+}
+
+.page-label {
+  color: #9e9e9e;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  line-height: 1.05;
+}
+
+.page-subtext {
+  font-size: 1.05rem;
+  color: #b8b8b8;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.browse-search-bar {
+  margin-bottom: 20px;
+}
+
+.browse-search-input {
+  width: 100%;
+  max-width: 560px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #111111;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.browse-search-input::placeholder {
+  color: #8a8a8a;
+}
+
+.browse-search-input:focus {
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
+}
+
+.category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.chip {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: #b8b8b8;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chip:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.chip-active {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  font-weight: 600;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.empty-state h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: #b7b7b7;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.listing-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 22px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.listing-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.listing-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.listing-category {
+  font-size: 0.78rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.fav-btn {
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 1.15rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: color 0.2s ease;
+}
+
+.fav-btn:hover {
+  color: #e05555;
+}
+
+.fav-active {
+  color: #e05555;
+}
+
+.listing-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.listing-desc {
+  font-size: 0.9rem;
+  color: #aaa;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.listing-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.listing-price {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.listing-seller {
+  font-size: 0.82rem;
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  .page-content {
+    padding: 28px 20px 48px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.4rem;
+  }
+}
